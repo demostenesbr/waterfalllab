@@ -4,6 +4,7 @@ const routes = [
   ["/dashboard", "Dashboard"],
   ["/projects", "Projetos"],
   ["/lifecycle", "Ciclo de Vida"],
+  ["/validation", "Validação e Conformidade"],
   ["/requirements", "Requisitos"],
   ["/analysis", "Análise"],
   ["/design", "Arquitetura e Projeto"],
@@ -18,13 +19,13 @@ const routes = [
 test("the root route redirects to the dashboard", async ({ page }) => {
   await page.goto("/");
   await expect(page).toHaveURL(/\/dashboard$/);
-  await expect(page).toHaveTitle("Dashboard | WaterfallLab");
+  await expect(page).toHaveTitle("Dashboard | Waterfall Lab");
 });
 
 for (const [path, title] of routes) {
   test(`${path} renders with its title`, async ({ page }) => {
     await page.goto(path);
-    await expect(page).toHaveTitle(`${title} | WaterfallLab`);
+    await expect(page).toHaveTitle(`${title} | Waterfall Lab`);
     await expect(page.getByRole("link", { name: title, exact: true }).first()).toBeVisible();
   });
 }
