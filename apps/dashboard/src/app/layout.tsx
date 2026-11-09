@@ -10,15 +10,19 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "WaterfallLab",
-    template: "%s | WaterfallLab",
+    default: "Waterfall Lab",
+    template: "%s | Waterfall Lab",
   },
   description: "Gestão e qualidade do ciclo de vida de software.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="pt-BR" className={`${inter.variable} h-full antialiased`}>
+    <html
+      lang="pt-BR"
+      className={`${inter.variable} h-full antialiased`}
+      suppressHydrationWarning
+    >
       <body className="h-full">{children}</body>
     </html>
   );

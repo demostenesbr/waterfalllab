@@ -323,6 +323,13 @@ export const Rocket = createIcon(
   </>,
 );
 
+export const Scale = createIcon(
+  "Scale",
+  <>
+    <path d="M3 21h18" /><path d="M12 3v18" /><path d="M6 21a6 6 0 0 1 12 0" />
+  </>,
+);
+
 export const Search = createIcon(
   "Search",
   <>

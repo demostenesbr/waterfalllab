@@ -9,6 +9,7 @@ import {
   LayoutDashboard,
   Rocket,
   Settings,
+  Scale,
   Wrench,
 } from "@/components/ui/icons";
 
@@ -16,6 +17,7 @@ export const navigation = [
   { label: "Dashboard", path: "/dashboard", icon: LayoutDashboard },
   { label: "Projetos", path: "/projects", icon: Boxes },
   { label: "Ciclo de Vida", path: "/lifecycle", icon: Blocks },
+  { label: 'Validação e Conformidade', path: '/validation', icon: Scale },
   { label: "Requisitos", path: "/requirements", icon: ClipboardCheck },
   { label: "Análise", path: "/analysis", icon: BarChart3 },
   { label: "Arquitetura e Projeto", path: "/design", icon: Boxes },
